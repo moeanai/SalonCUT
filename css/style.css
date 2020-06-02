@@ -438,7 +438,8 @@ footer h1 {
   object-fit: cover;
 }
 
-.menu {
+.menu,
+.discount-menu {
   width: 80%;
   margin: 0 auto;
 }
@@ -632,7 +633,6 @@ footer h1 {
     height: 300px;
   }
 
-
   .content-wrapper h2 {
     font-size: 25px;
     margin-bottom: 20px;
@@ -741,13 +741,18 @@ footer h1 {
 
 
   .menu-mainvisual img {
-    width: 100%;
     height: 450px;
-    margin-top: 70px;
-    object-fit: cover;
   }
-
-
+  .discount-menu {
+    width: 100%;
+  }
+  .discount {
+    padding: 80px;
+  }
+  
+  .menu-content th::after {
+    width: 60%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -770,6 +775,23 @@ footer h1 {
     height: 250px;
   }
 
+  .news {
+    padding: 50px 0;
+  }
+  .news .content-wrapper {
+    width: 85%;
+  }
+  .news .content tr td:first-child {
+    letter-spacing: 0.1em;
+  }
+  .news .content tr td:nth-child(2) {
+    font-size: 12px;
+    padding-left: 5px;
+  }
+  .news .content .btn a {
+    width: 150px;
+  }
+
   .style-pc {
     display: none;
   }
@@ -781,9 +803,9 @@ footer h1 {
   .style-sp::before {
     content: '';
     width: 100%;
-    height: 70%;
+    height: 80%;
     position: absolute;
-    top: 38%;
+    top: 30%;
     z-index: -1;
     background-color: rgba(160, 177, 177, 0.4);
   }
@@ -792,14 +814,14 @@ footer h1 {
     text-align: center;
   }
   .style-img-sp {
-    margin: 80px auto;
+    margin: 50px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
   .style-img-sp img {
     width: 40%;
-    height:40%;
+    height: auto;
     margin: 5px;
   }
   .style-sp .btn-sp {
@@ -819,6 +841,7 @@ footer h1 {
     display: block;
     margin: 150px auto 200px auto;
   }
+
   
   .access-content {
     display: flex;
@@ -836,6 +859,50 @@ footer h1 {
     font-size: 23px;
     font-weight: 600;
   }
+
+  .menu-mainvisual img {
+    height: 250px;
+  }
+
+  .menu {
+    width: 85%;
+  }
+  .menu-head {
+    margin: 80px auto;
+  }
+  .menu-head p {
+    margin-top: 10px;
+    padding-left: 100px;
+    position: static;
+  }
+  .cut,
+  .color,
+  .permanent,
+  .straight,
+  .other,
+  .discount {
+    margin: 65px 0;
+  }
+  .discount {
+    background-color: #A0B1B1;
+    color: #fff;
+    padding: 50px;
+  }
+  .menu-heading h3 {
+    font-size: 20px;
+    padding-bottom: 8px;
+  }
+  .menu-heading span {
+    margin-left: 15px;
+    font-size: 13px;
+  }
+  .menu-content th::after {
+    width: 45%;
+  }
+
+  .discount .menu-content th::after {
+    width: 35%;
+  }
   
 }
 
@@ -846,7 +913,7 @@ footer h1 {
     line-height: 1.6em;
     letter-spacing: 0.15em;
   }
-  
+
   .mainvisual::before {
     height: 150px;
   }
