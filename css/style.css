@@ -625,8 +625,11 @@ footer h1 {
   }
   /* ハンバーガーメニュCSSここまで */
   
+  .mainvisual::before {
+    height: 250px;
+  }
   .mainvisual img {
-    height: 350px;
+    height: 300px;
   }
 
 
@@ -680,6 +683,7 @@ footer h1 {
   }
   .staff-sp ul li img {
     width: 50%;
+    height: 50%;
     margin-right: 30px;
   }
   .staff01-sp.caption,
@@ -760,10 +764,10 @@ footer h1 {
   }
 
   .mainvisual::before {
-    height: 250px;
+    height: 200px;
   }
   .mainvisual img {
-    height: 300px;
+    height: 250px;
   }
 
   .style-pc {
@@ -795,6 +799,7 @@ footer h1 {
   }
   .style-img-sp img {
     width: 40%;
+    height:40%;
     margin: 5px;
   }
   .style-sp .btn-sp {
@@ -814,7 +819,6 @@ footer h1 {
     display: block;
     margin: 150px auto 200px auto;
   }
-
   
   .access-content {
     display: flex;
@@ -841,6 +845,13 @@ footer h1 {
     font-size: 14px;
     line-height: 1.6em;
     letter-spacing: 0.15em;
+  }
+  
+  .mainvisual::before {
+    height: 150px;
+  }
+  .mainvisual img {
+    height: 200px;
   }
 
   .content-wrapper h2 {
